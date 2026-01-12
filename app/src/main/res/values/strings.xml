@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">jazz.li</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="spotifyChanelHyperlink">Our Spotify Chanel :: here you will find playlist, of the most beautiful songs we manage to found over the years  :: <a href="https://open.spotify.com/user/31ch5wsl5wldzlj6mvvx3jw4igpa?si=014337488f554cae">https://open.spotify.com/user/31ch5wsl5wldzlj6mvvx3jw4igpa?si=014337488f554cae</a></string>
+    <string name="sonemicChanelHyperlink">Our Sonemic Album Ratings :: here you find jazz albums you have to listen before you die, we rate only masterpiece albums (ratingsof 5 or 4.5 stars) :: <a href="https://rateyourmusic.com/~Jazz_God">https://rateyourmusic.com/~Jazz_God</a></string>
+    <string name="WBGORadioHyperlink">WBGORadio :: is maybe the best Jazz Radio out there, great to discover new music! :: <a href="https://www.wbgo.org/">https://www.wbgo.org/</a></string>
+    <string name="goodReadsChanelHyperlink">Our GoodReads Chanel :: here are the best educational books about jazz :: <a href="https://learntodroid.com">https://learntodroid.com</a></string>
+    <string name="IMPLSHyperlink">IMPLS :: at this shite you can find, public domain sheet music (you can free download them too) :: <a href="https://imslp.org/wiki/Main_Page">https://imslp.org/wiki/Main_Page</a></string>
+
+
+    <string name="appInfoText">\t Hello, i am the Developer of this application, i hope that serves you well.
+                               My name is Nicos Sarado, i am a Software Engineer at the day and a Jazz musician
+                               when the night falls. \n
+                               \t The goal of this Video Library, is to contain the ancient knowledge of the
+                               Jazz Masters, for you to internalise it and become their living embodiment. \n
+                               \t So learn my child\' learn every day and every waking hour, practise and try
+                               harder\' with all your will and heart and soul\' to climp towards the snowy peaks
+                                of the unspeakable truth, and when you reach there, let her blaze your heart gently,
+                               and cary this flame back to us and to the physical world. \n
+                               \t Because people\' are in need of this Music, and because Music is in need of
+                               your love today.</string>
+
+    <string name="facebookLink">Visit our Facebook page clicking <a href="https://www.facebook.com/jazzstudie.jazzstudie/friends/">here</a></string>
+    <string name="instagramLink">Visit our Instagram page clicking <a href="https://www.instagram.com/nicos.sarado/">here</a></string>
+    <string name="patreonLink">Following this link, you can became one of our <a href="https://www.facebook.com/jazzstudie.jazzstudie/friends/">Patreons</a>
+                                We have great plans for you, Together we will climb highter than the stars. Became one of us.</string>
+
+
+    <string name="applicationInstructionsText">\t Access \t the \t drawable\t window \ndraging the upper left corner. 🌼 \n
+                                                \t Pressing any of the oval  buttons, \nactivates \t the \tDynamic \tFiltering \nMechanism,\t
+                                                with witch, \t you can \nsearch between\t video\t categories &amp; \nmaximise the searching results. ⚡\n
+                                                (each button describes the related number of videos )</string>
+
+    <array name="Search_Option">
+        <item>General</item>
+        <item>Contain</item>
+    </array>
+
+    <array name="setings_background_color_spinner">
+        <item>Gradient</item>
+        <item>Broken Blues</item>
+        <item>Magenta</item>
+        <item>Orange</item>
+    </array>
+
+
+
+</resources>

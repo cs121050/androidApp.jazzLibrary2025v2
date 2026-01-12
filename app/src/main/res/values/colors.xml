@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <!-- <color name="purple_200">#FFBB86FC</color> -->
+
+    <!-- <color name="teal_200">#FF03DAC5</color>
+         <color name="teal_700">#FF018786</color> -->
+    <color name="teal_500">#FF018786</color>
+    <color name="silk_blue">#488AC7</color>
+
+
+    <color name="colorPrimary">#FFBB86FC</color>
+    <color name="colorIconBackground">#FF3700B3</color>
+    <color name="whiteText">#FFFFFFFF</color>
+    <color name="blackText">#FF000000</color>
+
+
+    <color name="colorGradientStrart">#5858FA</color>
+    <color name="colorGradientCenter">#F67831</color>
+    <color name="colorGradientEnd">#FF1499</color>
+
+
+    <color name="chipInstument">#d88200</color>
+    <color name="chipArtist">#972270</color>
+    <color name="chipDuration">#295180</color>
+    <color name="chipType">#096F5C</color>
+
+    <color name="chipNoVideos">#90ADA9</color>
+
+
+
+</resources>

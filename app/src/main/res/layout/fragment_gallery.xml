@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- DrawerLayout as a child of ConstraintLayout -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Main Content -->
+        <include
+            layout="@layout/fragment_gallery_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Sliding Drawer (Right to Left) -->
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/drawer"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/white">
+
+            <include
+                layout="@layout/fragment_gallery_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <include
+        android:id="@+id/main_logo_pathbar_layout"
+        layout="@layout/logo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+
+        android:elevation="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

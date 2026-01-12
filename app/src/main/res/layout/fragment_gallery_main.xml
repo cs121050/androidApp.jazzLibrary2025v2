@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_layout_blue_gradient_background"
+    tools:context=".presentation.gallery.GalleryFragment"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:ignore="DiscouragedApi">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/galery_fragment_linear_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/navigationBarLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/splash_screen_progress_bar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+
+                android:src="@drawable/book_loading_bar_gif"
+                android:visibility="gone" />
+
+
+
+
+            <ImageView
+                android:id="@+id/jazzLiLogo"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/jazzlibrary_logo"
+                android:layout_gravity="center_vertical"
+                />
+
+
+            <HorizontalScrollView
+                android:id="@+id/path_bar_scroller"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/pathBarLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_linear_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <HorizontalScrollView
+                    android:id="@+id/search_bar_scroller"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp">
+
+                    <LinearLayout
+                        android:id="@+id/searchLinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <Spinner
+                            android:id="@+id/searchOptionSpinner"
+                            style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/Search_Option"
+                            android:popupBackground="@drawable/main_layout_blue_gradient_background" />
+
+
+                        <ImageView
+                            android:id="@+id/clearEditTextCross"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            app:srcCompat="@android:drawable/ic_notification_clear_all" />
+
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteSearchBar"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:completionThreshold="1"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+
+                            android:popupBackground="@drawable/main_layout_blue_gradient_background"
+                            android:textStyle="italic"
+                            app:boxStrokeColor="@color/teal_200"
+                            app:hintTextColor="@color/teal_200" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <ProgressBar
+                    android:id="@+id/paginationProgressBar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:visibility="gone" />
+
+
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/swipeRefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="750dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:paddingTop="5dp"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/video_pagination_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical"
+                        tools:listitem="@layout/youtubeplayer_recycler_list_item" />
+
+
+
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>
